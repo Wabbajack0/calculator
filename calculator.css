@@ -1,16 +1,44 @@
+body {
+  background-color: #e53d3d;
+}
+
+button {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 30px;
+  margin: 5px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: #494949;
+  color: #fffef4;
+  border-color: #494949;
+}
+
 .container {
   display: flex;
   flex-direction: column;
+  margin: 6rem auto 0 auto;
+  width: 30%;
+  background-color: #c1c1c1;
+  border-radius: 40px;
+  border-style: outset;
+  border-color: #c1c1c1;
 }
 
 .screen {
-  height: 3rem;
-  width: 319.563px;
-  background-color: grey;
-  margin: 0 auto;
+  height: 5rem;
+  width: 380px;
+  background-color: #212121;
+  margin: 3rem auto 2rem auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 40px;
+  color: #00dd0b;
+  border-radius: 20px;
+  border-style: inset;
+  border-color: black;
 }
 
 span {
@@ -20,7 +48,7 @@ span {
 .container-buttons {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
 }
 
 .container-operators {
@@ -31,8 +59,26 @@ span {
 .container-numbers {
   display: flex;
   flex-wrap: wrap;
+  width: 60%;
 }
 
 .container-numbers button {
-  flex-basis: 6rem;
+  flex-basis: 5rem;
+}
+
+.container-operators button {
+  width: 4rem;
+  background-color: #fff200;
+  border-color: #fff200;
+  color: black;
+}
+
+#equal {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+#clear {
+  background-color: #58c8ce;
+  border-color: #58c8ce;
 }

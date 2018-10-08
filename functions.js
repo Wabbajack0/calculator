@@ -9,7 +9,7 @@ function clear() {
 function editScreen(e) {
   if (screenValue == 0) {
     screenValue = e.target.textContent;
-  } else {
+  } else if (screenValue.length < 10) {
     screenValue += e.target.textContent;
   }
   calcScreen.textContent = screenValue;
@@ -29,7 +29,10 @@ function saveNum2andEqual() {
       alert('ERROR! Don\'t divide any number by zero!');
       clear();
     } else {
-      screenValue = operate(op, num1, num2);
+      screenValue = String(operate(op, num1, num2));
+      if (screenValue.length > 10) {
+        screenValue = String(Number(screenValue).toFixed(10));
+      }
       calcScreen.textContent = screenValue;
     }
   }
@@ -46,7 +49,7 @@ function operate(op, a, b) {
     case '-':
       return subtract(a, b);
       break;
-    case 'x':
+    case '×':
       return multiply(a, b);
       break;
     case '÷':
