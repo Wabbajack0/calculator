@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  height: 3rem;
+  width: 319.563px;
+  background-color: grey;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+span {
+  margin-right: 1rem;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container-operators {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-numbers button {
+  flex-basis: 6rem;
+}
